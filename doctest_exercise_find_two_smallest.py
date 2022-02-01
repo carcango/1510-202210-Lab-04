@@ -1,6 +1,6 @@
 """
-Your name:
-Your student number:
+Your name: Carson Olafson
+Your student number: A01221217
 """
 
 
@@ -21,3 +21,9 @@ def find_two_smallest(some_list):
     >>> items == [809, 834, 477, 478, 307, 122, 96, 102, 324, 476]
     True
     """
+    two_smallest = []
+    for minimum in some_list:
+        if len(two_smallest) >= 2:
+            return two_smallest
+        else:
+            two_smallest += min(some_list)
