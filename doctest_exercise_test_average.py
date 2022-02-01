@@ -1,6 +1,6 @@
 """
-Your name:
-Your student number:
+Your name: Carson Olafson
+Your student number: A01221217
 """
 
 
@@ -14,8 +14,19 @@ def average(values):
     :postcondition: values is unchanged
     :return: the average of the non-None numbers in values
 
+
+
+
     >>> average([20, 30])
     25.0
     >>> average([None, 20, 30])
     25.0
     """
+    total = 0
+    counter = 0
+
+    for value in values:
+        if value is not None:
+            total = value + total
+            counter += 1
+    return total / counter
