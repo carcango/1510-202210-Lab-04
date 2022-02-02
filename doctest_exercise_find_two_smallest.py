@@ -21,9 +21,23 @@ def find_two_smallest(some_list):
     >>> items == [809, 834, 477, 478, 307, 122, 96, 102, 324, 476]
     True
     """
+    minimum = 0
     two_smallest = []
     for minimum in some_list:
         if len(two_smallest) >= 2:
             return two_smallest
         else:
-            two_smallest += min(some_list)
+            minimum = min(some_list)
+            minimum2 = x for x in some_list if minimum
+
+            minimum_index = some_list.index(minimum)
+            two_smallest.append(minimum_index)
+
+
+""" how do I ignore the first minimum numer when trying to get the second lowest number? Current program removes 
+    the first minimum, however I know this method will not work because it changes the initial list.
+    
+    1st strategy: find minimum in some list, then filter for minimum with boolean logic excluding first one. 
+    2nd strategy: copy list and sort numbers, use the sorted list to get smallest numbers to get index values for
+    original list
+"""
