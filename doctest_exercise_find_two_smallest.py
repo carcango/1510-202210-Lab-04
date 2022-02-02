@@ -17,7 +17,7 @@ def find_two_smallest(some_list):
 
     Test 1: Default test, returns the indices of the two smallest values in some_list. It did.
 
-    Test 2: Default test, confirms that sine_list is unchanged in the function.
+    Test 2: Default test, confirms that sine_list is unchanged in the function. It did
 
     Test 3. Tried using zero as an element in the list to see if it worked. It did.
 

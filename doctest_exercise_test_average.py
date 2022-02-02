@@ -14,13 +14,23 @@ def average(values):
     :postcondition: values is unchanged
     :return: the average of the non-None numbers in values
 
+    Test 1: Default test, finds the average of two numbers. It did.
 
+    Test 2: Default test, tried finding the average of two numbers with None being an included element. It did.
+
+    Test 3. Tried using a negative integer to see if it worked in the function. It did.
+
+    Test 4. Tried using a float and a negative to see if it worked. It did.
 
 
     >>> average([20, 30])
     25.0
     >>> average([None, 20, 30])
     25.0
+    >>> average([-20, 30])
+    5.0
+    >>> average([None, 0.5, -30])
+    -14.75
     """
     total = 0
     counter = 0
