@@ -1,6 +1,6 @@
 """
-Your name:
-Your student number:
+Your name: Carson Olafson
+Your student number: A01221217
 """
 
 
@@ -17,6 +17,12 @@ def repeat(some_string, number):
     :postcondition: return a correctly multipled string
     :return: a string, possibly empty (length zero)
 
+    Test 1 - 4. Default tests to see if function works as a string repeater. It does
+
+    Test 5. Tested to see numbers worked if defined in the strings. It did.
+
+    Test 6. Tested to see if floats could be used if type converted in number input. It did (truncated)
+
     >>> repeat('yes', 4)
     'yesyesyesyes'
     >>> repeat('no', 0)
@@ -25,4 +31,12 @@ def repeat(some_string, number):
     ''
     >>> repeat('yesnomaybe', 3)
     'yesnomaybeyesnomaybeyesnomaybe'
+
+    >>> repeat('yes123456789', 2)
+    'yes123456789yes123456789'
+
+    >>> repeat('yes', int(4.7))
+    'yesyesyesyes'
     """
+
+    return some_string * number
