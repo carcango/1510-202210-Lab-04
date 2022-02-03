@@ -31,10 +31,8 @@ def repeat(some_string, number):
     ''
     >>> repeat('yesnomaybe', 3)
     'yesnomaybeyesnomaybeyesnomaybe'
-
     >>> repeat('yes123456789', 2)
     'yes123456789yes123456789'
-
     >>> repeat('yes', int(4.7))
     'yesyesyesyes'
     """
